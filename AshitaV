@@ -19,3 +19,9 @@ women_df<-subset(women,height > mean.ht & weight < mean.wt)
 women_df
 
 #The answer is 0. No observations meet the aforesaid condition
+
+# 3. Create a data frame of 15 Indian cities and their population size. You could refer cities and
+#    population from this page.http://www.worldatlas.com/articles/thebiggest-cities-in-india.html
+
+input_csv <- read.csv(file="Put path to file here")
+class(input_csv)
