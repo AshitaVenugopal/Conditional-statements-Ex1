@@ -1,0 +1,21 @@
+#Hands-on Exercise 1
+# 1. Install a package - data.table and give a name of function starting character "d"
+
+install.packages("data.table")
+
+# 2. Install and Load package -datasets. Use "women" data frame available in this package.
+#    Find number of woman with height more than average but weight less than average
+
+install.packages("datasets")
+library("datasets")
+women
+mean.ht<-mean(women$height)
+mean.wt<-mean(women$weight)
+
+# Creating new dataframe with conditions applied
+#subset returns subsets of dataframes with conditions
+
+women_df<-subset(women,height > mean.ht & weight < mean.wt)
+women_df
+
+#The answer is 0. No observations meet the aforesaid condition
